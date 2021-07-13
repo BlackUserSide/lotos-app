@@ -1,0 +1,39 @@
+.main-header
+    display: flex
+    max-width: 100%
+    padding: 0 80px
+    //overflow: hidden
+    .logo-wrapper
+        padding-top: 20px
+        width: calc(60% - 50px)
+    .main-nav
+        width: 40%
+        .nav-bar
+            padding: 0
+            display: flex
+            padding-top: 50px
+            align-items: center
+            .main-link
+                margin-right: 50px
+                user-select: none
+                &:nth-child(5)
+                    margin-right: 0
+                a
+                    text-decoration: none
+                    color: #fff
+                    font-weight: 400
+                    font-size: 18px
+                    transition: .3s ease
+                    &:hover
+                        color: #F4BFC7
+                .main-auth-link
+                    border-radius: 50%
+                    background: #F4BFC7
+                    padding: 9px 10px
+                    cursor: pointer
+                    transition: .3s ease
+                    &:hover
+                        transform: scale(1.1)
+                .change-lang-wrapper
+                    color: #fff
+                    cursor: pointer
