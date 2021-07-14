@@ -1,11 +1,12 @@
 .start-path-composition
     padding: 70px 80px
-    .items 
+    .items
         display: flex
         justify-content: space-between
         align-items: center
-        .item 
+        .item
             max-width: 55%
+            margin-bottom: 40px
             h1
                 margin: 20px 0
                 font-weight: 400
@@ -18,10 +19,21 @@
             justify-content: center
             min-width: 30%
             height: 71px
-            background-color:#F4BFC7
+            background-color: #F4BFC7
             cursor: pointer
             &:hover
                 background: rgba(#F4BFC7, .8)
-            span 
+            span
                 font-size: 18px
                 font-weight: 400
+@media screen and ( max-width: 850px )
+    .start-path-composition
+        .items
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            .btn-login
+                min-width: 70%
+            .item
+                max-width: 100%

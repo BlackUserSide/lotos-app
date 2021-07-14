@@ -1,19 +1,23 @@
 .list-composition
     padding: 70px 80px
-    h1 
+    h1
         color: #F9DFE3
     .items-wrapper
         display: flex
-        .item 
+        .items
+            max-width: 50%
+        .item
             display: flex
             flex-wrap: wrap
             height: 20%
-            width: 70%
+            width: 100%
             margin: 64px 0
-            p 
+            p
                 margin: 12px
+                max-width: 70%
             .svg-block
                 display: flex
+                max-width: 470px
                 justify-content: space-between
                 align-items: center
                 .svg
@@ -23,6 +27,22 @@
                     border-radius: 100%
                     display: flex
                     align-items: center
-                    justify-content: center 
-                h3 
+                    justify-content: center
+                h3
                     margin: 0 10px
+@media screen and ( max-width: 1200px )
+    .list-composition
+        .items-wrapper
+            display: flex
+            flex-direction: column
+            align-items: center
+            .items
+                max-width: 80%
+
+@media screen and ( max-width: 685px )
+    .list-composition
+        padding: 70px 20px
+        .items-wrapper
+
+            .items
+                max-width: 100%

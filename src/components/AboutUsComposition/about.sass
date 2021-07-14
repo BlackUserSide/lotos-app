@@ -1,14 +1,32 @@
 .about-composition
     padding: 70px 80px
-    .items 
+    .items
         display: flex
         align-items: center
         justify-content: space-between
         .item
             min-width: 50%
-            h1 
+            img
+                width: 80%
+            h1
+                padding-left: 10px
                 color: #F4BFC7
-            p 
-                margin: 20px 0   
+            p
+
+                padding: 20px 10px
                 line-height: 24px
-                font-size: 18px 
+                font-size: 18px
+@media screen and ( max-width: 1220px )
+    .about-composition
+        .items
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            .item
+                width: 100%
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                img
+                    margin-bottom: 40px
