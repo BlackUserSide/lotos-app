@@ -7,13 +7,21 @@ import "../../libs/hamburgers/dist/hamburgers.css";
 import { useState } from "react";
 
 export const Header: React.FC = () => {
-  const [activeMenu, setActiveMenu] = useState<boolean>();
+  const [activeMenu, setActiveMenu] = useState<boolean>(false);
+  const [popUp, setPopUp] = useState<boolean>(false);
   const activeHandler = () => {
     if (activeMenu) {
       setActiveMenu(false);
       return;
     }
     setActiveMenu(true);
+  };
+  const popHandler = () => {
+    if (popUp) {
+      setPopUp(false);
+      return;
+    }
+    setPopUp(true);
   };
   return (
     <>
@@ -33,7 +41,7 @@ export const Header: React.FC = () => {
               <Link to="/leader">Руководитель</Link>
             </li>
             <li className="main-link">
-              <div className="main-auth-link">
+              <div className="main-auth-link" onClick={popHandler}>
                 <img src={user} alt="user-ico" />
               </div>
             </li>
@@ -72,7 +80,7 @@ export const Header: React.FC = () => {
                 <Link to="/leader">Руководитель</Link>
               </li>
               <li className="main-link">
-                <div className="main-auth-link">
+                <div className="main-auth-link" onClick={popHandler}>
                   <img src={user} alt="user-ico" />
                   <p>Войти</p>
                 </div>
