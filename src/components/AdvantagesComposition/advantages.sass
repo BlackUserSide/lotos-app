@@ -1,0 +1,43 @@
+.advantages-composition
+    padding: 30px 80px 
+    background-image: url("../../img/bg-lotos.png")
+    background-size: cover
+    .items 
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        .item 
+            position: relative
+            .p
+                margin: 53px 0 0 0
+                &::before 
+                    content: ''
+                    border: 0.5px solid #F4BFC7
+                    width: 304px
+                    position: absolute
+                    bottom: -20px
+            max-width: 50%
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            ul 
+                padding: 13px
+                list-style: none
+            li 
+
+                &::before
+                    position: relative
+                    top: 22px
+                    content: "\2022"
+                    color: #F4BFC7
+                    font-weight: bold
+                    width: 1em
+                    margin-left: -1em
+            h1 
+                color: #F4BFC7
+            h2 
+                color:#F4BFC7  
+            p 
+                margin: 0px 0
+                color: #FFFFFF          
+                line-height: 24px
