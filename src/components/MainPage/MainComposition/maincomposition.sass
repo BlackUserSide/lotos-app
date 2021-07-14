@@ -1,9 +1,10 @@
 .main-composition
-    background: url('../../img/bg.jpg')
+    background: url('../../../img/bg.jpg')
     min-height: 790px
     height: 100%
     background-size: cover
     position: relative
+    overflow: hidden
     .main-text-composition
         position: absolute
         top: 50%
@@ -41,3 +42,13 @@
             color: #fff
             margin-bottom: 10px
             font-size: 18px
+@media screen and ( max-width: 545px )
+    .main-composition
+        .main-text-composition
+            .h1
+                font-size: 75px
+            .second-logo
+                font-size: 22px
+            .desc-about
+                font-size: 18px
+                margin-left: 0

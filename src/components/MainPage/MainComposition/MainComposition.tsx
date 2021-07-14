@@ -1,7 +1,8 @@
 import React from "react";
-import { Header } from "../Header/Header";
-import downArrow from "../../img/arrow-down.png";
+import { Header } from "../../Header/Header";
+import downArrow from "../../../img/arrow-down.png";
 import "./maincomposition.sass";
+
 export const MainComposition: React.FC = () => {
   return (
     <div className="main-composition">

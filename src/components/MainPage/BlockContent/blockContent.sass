@@ -1,0 +1,87 @@
+.block-content
+    display: flex
+    font-display: row
+    flex-wrap: wrap
+    max-width: 100%
+.item-box
+    width: 50%
+    height: 500px
+    position: relative
+    perspective: 1000px
+.front-block, .desc-block
+    position: absolute
+    width: 100%
+    height: 100%
+    left: 0
+    top: 0
+    display: flex
+    transition: 1s
+    backface-visibility: hidden
+    background-color: #fff
+.front-block
+    img
+        max-width: 100%
+        min-width: 100%
+        height: auto
+    .text-logo
+        position: absolute
+        bottom: 70px
+        left: 35px
+        .h4
+            color: #F4BFC7
+            font-size: 36px
+.desc-block
+    transform: rotateY(180deg)
+    img
+        max-width: 100%
+        min-width: 100%
+        transform: scale(-1, 1)
+    .text-compose
+        position: absolute
+        max-width: 100%
+        bottom: 0
+        padding: 0 35px
+        opacity: 0
+        .h4
+            font-size: 36px
+            color: #F4BFC7
+            margin-bottom: 15px
+        p
+            color: #fff
+            line-height: 24px
+            width: 390px
+            margin-bottom: 35px
+        a
+            text-decoration: none
+            color: #000
+            background: #F4BFC7
+            padding: 10px 25px
+            display: inline-block
+            margin-bottom: 55px
+            border-radius: 5px
+            transition: .3s ease
+            &:hover
+                transform: scale(1.1)
+.item-box
+    &:hover
+        .front-block
+            transform: rotateY(180deg)
+.item-box
+    &:hover
+        .desc-block
+            transform: rotateY(360deg)
+            .text-compose
+                animation: fadeText .3s ease-in-out forwards
+                animation-delay: .8s
+@keyframes fadeText
+    0%
+        opacity: 0
+    100%
+        opacity: 1
+@media screen and ( max-width: 760px )
+    .item-box
+        width: 100%
+@media screen and ( max-width: 550px )
+    .desc-block
+        .text-compose
+            padding: 0 5px
