@@ -37,3 +37,77 @@
                 .change-lang-wrapper
                     color: #fff
                     cursor: pointer
+.mobile-header
+    display: flex
+    max-width: 100%
+    padding: 0 80px
+    align-items: center
+    justify-content: space-between
+    position: relative
+    .logo-wrapper
+        padding-top: 20px
+        width: calc(60% - 50px)
+    .is-active
+        position: relative
+        right: 120px
+        animation: menuActive .3s ease-in-out forwards
+    .mobile-nav
+        .hidden-menu
+            position: fixed
+            background: #000
+            padding: 10px 15px
+            right: -250px
+            top: 0
+            min-height: 100%
+            z-index: 999
+
+            ul
+                padding: 0
+                list-style-type: none
+                li
+                    margin-bottom: 15px
+                    .main-auth-link
+                        display: flex
+                        flex-direction: row
+                        align-items: center
+                        p
+                            color: #fff
+                        img
+                            margin-right: 10px
+                    a
+                        text-decoration: none
+                        color: #fff
+        .active-menu
+            animation: fadeIn .3s ease-in-out forwards
+            animation-delay: .3s
+@keyframes fadeIn
+    0%
+        right: -255px
+    100%
+        right: 0
+@keyframes fadeOut
+    0%
+        right: 0
+    100%
+        right: -255px
+@keyframes menuActive
+    0%
+        right: 0
+    100%
+        right: 120px
+@media screen and ( max-width: 1240px )
+    .main-header
+        display: none
+    .mobile-header
+        display: flex
+@media screen and ( max-width: 545px )
+    //
+@media screen and ( max-width: 449px )
+    .mobile-header
+        padding: 0 10px
+
+@media screen and ( min-width: 1240px )
+    .main-header
+        display: flex
+    .mobile-header
+        display: none
