@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./popuplogin.sass";
 export const PopUpLogin: React.FC = () => {
   return (
     <div className="pop-up-login">

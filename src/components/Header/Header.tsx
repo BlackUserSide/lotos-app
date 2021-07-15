@@ -5,6 +5,7 @@ import user from "../../img/user.png";
 import "./header.sass";
 import "../../libs/hamburgers/dist/hamburgers.css";
 import { useState } from "react";
+import { PopUpLogin } from "../../ui/PopUpLogin/PopUpLogin";
 
 export const Header: React.FC = () => {
   const [activeMenu, setActiveMenu] = useState<boolean>(false);
@@ -94,6 +95,7 @@ export const Header: React.FC = () => {
           </nav>
         </div>
       </header>
+      {popUp ? <PopUpLogin /> : ""}
     </>
   );
 };
