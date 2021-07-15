@@ -8,15 +8,15 @@ export const AdvantagesComposition: React.FC = () => {
            <div className="item">
                <h1>Почему мы?</h1>
                <ul>
-                   <li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></li>
-                   <li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></li>
-                   <li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></li>
-                   <li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></li>
+                   <li><p>Гибкий рабочий график</p></li>
+                   <li><p>Отсуствие риска</p></li>
+                   <li><p>Общение с интересными людьми</p></li>
+                   <li><p>Неограниченый доход</p></li>
                </ul>
            </div>
            <div className="item">
                <h2>Наши преимущества</h2>
-               <p className='p'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+               <p className='p'>Компания Lotus -  является автором и разработчиком уникальной, инновационной технологии вакуумной экстракции в получении ортомолекулярного комплекса, благодаря которой стало возможным получать высококонцентрированную фито-молекулярную жидкость из лекарственных растений, которая отлично зарекомендовала себя в применении оздоровительных и лечебно-профилактических мероприятиях.</p>
            </div>
        </div>
     </div>
