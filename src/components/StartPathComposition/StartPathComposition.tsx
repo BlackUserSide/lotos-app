@@ -6,7 +6,7 @@ export const StartPathComposition: React.FC = () => {
         <div className="items">
           <div className="item">
             <h1>Начни свой путь с Lotos уже сегодня!</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            
           </div>
           <div className="btn-login">
               <span>
