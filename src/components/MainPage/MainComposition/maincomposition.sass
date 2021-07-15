@@ -1,10 +1,13 @@
 .main-composition
-    background: url('../../../img/bg.jpg')
     min-height: 790px
     height: 100%
-    background-size: cover
     position: relative
     overflow: hidden
+    background: url('../../../img/video.gif')
+    background-repeat: no-repeat
+    width: 100%
+    background-size: cover
+    background-position: center
     .main-text-composition
         position: absolute
         top: 50%
@@ -12,6 +15,8 @@
         margin-right: -50%
         transform: translate(-50%, -50%)
         text-align: center
+
+        z-index: 3
         .h1
             color: #fff
             font-weight: 700

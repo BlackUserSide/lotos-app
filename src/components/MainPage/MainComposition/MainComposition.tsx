@@ -2,12 +2,10 @@ import React from "react";
 import { Header } from "../../Header/Header";
 import downArrow from "../../../img/arrow-down.png";
 import "./maincomposition.sass";
-//import videoBg from '../../../img/video.mp4';
 
 export const MainComposition: React.FC = () => {
   return (
     <div className="main-composition">
-      
       <Header />
       <div className="main-text-composition">
         <h1 className="h1">Lotus</h1>
